@@ -1,0 +1,158 @@
+{
+  "meta": {
+    "title": "Daru Rasan Varna | Steady supply of medicines and raw materials",
+    "description": "Import of pharmaceutical products and sourcing of APIs and excipients from established European and regional manufacturers, through a secure, fast and transparent supply chain.",
+    "contactTitle": "Contact | Daru Rasan Varna"
+  },
+  "brand": {
+    "name": "Daru Rasan Varna"
+  },
+  "nav": {
+    "services": "Services",
+    "contact": "Contact us",
+    "switchTo": "فا",
+    "switchLabel": "نسخه فارسی",
+    "menuOpen": "Open menu",
+    "menuClose": "Close menu",
+    "skip": "Skip to content",
+    "home": "Home"
+  },
+  "hero": {
+    "title": "A steady supply of medicines and raw materials, and a trusted bridge to global healthcare networks.",
+    "titleShort": "Steady supply of medicines and raw materials",
+    "sub": "A trusted bridge to global healthcare networks",
+    "cta": "Talk to us",
+    "secondary": "Our services",
+    "pause": "Pause motion",
+    "play": "Play motion",
+    "scatter": "Scatter and re-form"
+  },
+  "intro": "Daru Rasan Varna draws on a wide international trade network and close working relationships with established European and regional manufacturers. Our mission is to keep Iran's healthcare system and pharmaceutical manufacturers supplied without interruption. By following international transport standards closely and managing every trade document with care, we run a supply chain that is secure, fast and transparent.",
+  "services": {
+    "items": [
+      {
+        "id": "import",
+        "title": "Importing pharmaceutical products",
+        "points": [
+          "Importing essential and specialty medicines to meet the direct needs of patients and treatment centres.",
+          "Managing the full supply chain from origin to destination, including oversight of compliant transport and an unbroken cold chain for temperature-sensitive medicines.",
+          "Working knowledge of regulatory protocols and customs procedures, so medicines clear quickly."
+        ]
+      },
+      {
+        "id": "api",
+        "title": "Sourcing pharmaceutical raw materials (APIs and excipients)",
+        "points": [
+          "Sourcing and importing active ingredients and excipients that meet the highest international pharmacopoeia standards, to support Iran's domestic production lines.",
+          "Careful evaluation of foreign suppliers, and quality assurance for every material in line with the requirements of the Iran Food and Drug Administration.",
+          "Logistics planning and long-term international contracts that keep domestic production lines from stopping."
+        ]
+      }
+    ]
+  },
+  "ctaBand": {
+    "title": "Planning a medicine or raw material order?",
+    "button": "Start a conversation"
+  },
+  "footer": {
+    "phoneLabel": "Phone",
+    "emailLabel": "Email",
+    "addressLabel": "Address",
+    "whatsappLabel": "WhatsApp",
+    "phone": "+98 21 0000 0000",
+    "address": "Tehran, [office address]",
+    "whatsapp": "+98 900 000 0000",
+    "copyright": "© 2026 Daru Rasan Varna",
+    "navLabel": "Links"
+  },
+  "contact": {
+    "title": "Get in touch",
+    "lead": "A few short questions so your request reaches the right person.",
+    "steps": [
+      "Topic",
+      "Details",
+      "Your details",
+      "Review and send"
+    ],
+    "stepOf": "Step {n} of {total}: {label}",
+    "q1": "What would you like to talk to us about?",
+    "detailsTitle": "Details",
+    "yourDetails": "Your details",
+    "review": "Does this look right?",
+    "back": "Back",
+    "next": "Next",
+    "edit": "Edit",
+    "send": "Send request",
+    "sending": "Sending…",
+    "ok": "Request received. We'll reply within two working days.",
+    "err": "That didn't send. Check your connection and try again.",
+    "errNoKey": "The form isn't connected to email yet. Please use WhatsApp or call us instead.",
+    "startOver": "Start over",
+    "wa": "Continue on WhatsApp",
+    "waHi": "Hello, I would like to talk about: ",
+    "hint": "A phone number or an email is enough.",
+    "topic": "Topic",
+    "v": {
+      "contact": "Add a phone number or an email so we can reply.",
+      "email": "That email looks incomplete, for example name@example.com",
+      "phone": "That phone number looks too short.",
+      "name": "Please add your name.",
+      "required": "Please fill this in."
+    },
+    "topics": {
+      "import": {
+        "title": "Importing pharmaceutical products",
+        "sub": "Medicines for hospitals, pharmacies and distributors"
+      },
+      "api": {
+        "title": "Sourcing APIs and excipients",
+        "sub": "For pharmaceutical production lines"
+      },
+      "supplier": {
+        "title": "Becoming a supplier",
+        "sub": "For manufacturers and exporters outside Iran"
+      },
+      "other": {
+        "title": "Something else",
+        "sub": "Any other question or request"
+      }
+    },
+    "fields": {
+      "products": "Product name(s)",
+      "quantity": "Approximate quantity",
+      "coldChain": "Needs cold chain?",
+      "material": "Material name",
+      "grade": "Pharmacopoeia grade",
+      "monthlyVolume": "Monthly volume (kg)",
+      "company": "Company and country",
+      "range": "Product range",
+      "gmp": "GMP certified?",
+      "message": "Your message",
+      "note": "Anything else (optional)",
+      "name": "Full name",
+      "org": "Organisation",
+      "phone": "Phone",
+      "email": "Email"
+    },
+    "options": {
+      "yes": "Yes",
+      "no": "No",
+      "notSure": "Not sure"
+    },
+    "placeholders": {
+      "products": "e.g. Insulin glargine 100 IU/ml, Enoxaparin 40 mg",
+      "quantity": "e.g. 20,000 vials per quarter",
+      "material": "e.g. Paracetamol, microcrystalline cellulose",
+      "grade": "e.g. USP, EP or BP",
+      "monthlyVolume": "e.g. 500",
+      "company": "e.g. Pharma GmbH, Germany",
+      "range": "e.g. Sterile injectables, oral solids",
+      "message": "Tell us what you need and we'll pass it to the right person.",
+      "note": "Delivery timing, packaging, documents you need…",
+      "name": "e.g. Sara Ahmadi",
+      "org": "Hospital, pharmacy or company name",
+      "phone": "+98 912 000 0000",
+      "email": "name@company.com"
+    }
+  }
+}

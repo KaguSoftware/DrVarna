@@ -1,26 +1,134 @@
 @import "tailwindcss";
 
+/*
+  Daru Rasan Varna design tokens (from the design stack).
+  Light only. One accent: brand teal. Use teal-ink for teal text and buttons (AA), teal for large marks.
+  Radius rule: inner radius = outer radius minus padding.
+*/
+@theme {
+  --color-paper: #f7f9f8;
+  --color-white: #ffffff;
+  --color-ink: #2a3444;
+  --color-ink-deep: #1d2531;
+  --color-muted: #566270;
+  --color-line: #dde4e3;
+  --color-teal: #4ba5a6;
+  --color-teal-ink: #2b7a7b;
+  --color-teal-deep: #23696a;
+  --color-teal-wash: #e7f2f2;
+  --color-ok: #2f7d4f;
+  --color-err: #b3412e;
+
+  --font-fa: var(--font-estedad), "Estedad", Tahoma, sans-serif;
+  --font-display-fa: var(--font-estedad), "Estedad", Tahoma, sans-serif;
+  --font-en: var(--font-readex), system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --gutter: max(20px, env(safe-area-inset-left, 0px));
+  --gutter-end: max(20px, env(safe-area-inset-right, 0px));
+  --content: 1200px;
+  --header-h: 72px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background: var(--color-paper);
+  color: var(--color-ink);
+  font-family: var(--font-en);
+  font-size: 17px;
+  line-height: 1.7;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+  overflow-x: clip;
+}
+
+html[lang="fa"] body {
+  font-family: var(--font-fa);
+  line-height: 1.9;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+  line-height: 1.2;
+}
+
+html[lang="fa"] :is(h1, h2, h3) {
+  font-family: var(--font-display-fa);
+  line-height: 1.45;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-teal-ink);
+  outline-offset: 3px;
+}
+
+/* Everything clickable shows the pointer (Tailwind v4 resets buttons to the default cursor). */
+a[href],
+button,
+[role="button"],
+[role="tab"],
+[role="radio"],
+[role="checkbox"],
+[role="link"],
+summary,
+select,
+label:has(input[type="radio"], input[type="checkbox"]),
+input[type="radio"],
+input[type="checkbox"],
+input[type="submit"],
+input[type="button"] {
+  cursor: pointer;
+}
+
+:is(button, input, select, textarea, [role="button"]):disabled,
+[aria-disabled="true"] {
+  cursor: not-allowed;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Page container with safe-area aware gutters */
+.container-site {
+  width: 100%;
+  max-width: calc(var(--content) + 2 * 20px);
+  margin-inline: auto;
+  padding-left: var(--gutter);
+  padding-right: var(--gutter-end);
+}
+
+/* Directional icons flip in RTL. Never apply this to the logo. */
+[dir="rtl"] .flip-rtl {
+  transform: scaleX(-1);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
 }
