@@ -338,7 +338,7 @@ export function ContactStepper(props: { lang: "fa" | "en"; t: Dictionary["contac
           {t.ok}
         </h2>
         <div className="flex flex-wrap gap-3">
-          {waLink}
+          {site.showWhatsApp && waLink}
           <button type="button" onClick={reset} className={btnGhost}>
             {t.startOver}
           </button>
@@ -479,10 +479,12 @@ export function ContactStepper(props: { lang: "fa" | "en"; t: Dictionary["contac
                   {status === "sending" && <Spinner />}
                   {status === "sending" ? t.sending : t.send}
                 </button>
-                <a href={waHref} target="_blank" rel="noopener" className={`${btnGhost} w-full sm:w-auto`}>
-                  <WhatsAppIcon className="size-5" />
-                  {t.wa}
-                </a>
+                {site.showWhatsApp && (
+                  <a href={waHref} target="_blank" rel="noopener" className={`${btnGhost} w-full sm:w-auto`}>
+                    <WhatsAppIcon className="size-5" />
+                    {t.wa}
+                  </a>
+                )}
               </div>
               <div className="mt-4 flex flex-wrap items-center gap-x-6">
                 <button type="button" onClick={() => go(2)} className={textLink}>

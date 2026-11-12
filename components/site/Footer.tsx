@@ -17,8 +17,9 @@ export function Footer(props: {
 }) {
   const { lang, footer: f, nav, brand } = props;
   const wa = `https://wa.me/${site.whatsapp}`;
-  const rows: { label: string; node: React.ReactNode }[] = [
+  const rows: { label: string; node: React.ReactNode; show?: boolean }[] = [
     {
+      show: site.showPhone,
       label: f.phoneLabel,
       node: (
         <a href={site.phone.href} dir="ltr" className={`${ph} ${link} tabular`}>
@@ -35,6 +36,7 @@ export function Footer(props: {
       ),
     },
     {
+      show: site.showWhatsApp,
       label: f.whatsappLabel,
       node: (
         <a href={wa} target="_blank" rel="noopener" dir="ltr" className={`${ph} ${link} tabular`}>
@@ -44,9 +46,13 @@ export function Footer(props: {
     },
     {
       label: f.addressLabel,
-      node: <span className={ph}>{f.address}</span>,
+      node: <span>{f.address}</span>,
     },
-  ];
+    {
+      label: f.postalLabel,
+      node: <span dir="ltr" className="tabular">{f.postalCode}</span>,
+    },
+  ].filter((r) => r.show !== false);
 
   return (
     <footer className="border-t border-line bg-white">

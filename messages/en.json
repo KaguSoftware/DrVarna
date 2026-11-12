@@ -60,10 +60,12 @@
     "addressLabel": "Address",
     "whatsappLabel": "WhatsApp",
     "phone": "+98 21 0000 0000",
-    "address": "Tehran, [office address]",
+    "address": "Tehran, Iranshahr district, South Kheradmand Street, Karim Khan Zand Boulevard, 1st floor",
     "whatsapp": "+98 900 000 0000",
     "copyright": "© 2026 Daru Rasan Varna",
-    "navLabel": "Links"
+    "navLabel": "Links",
+    "postalLabel": "Postal code",
+    "postalCode": "1584854395"
   },
   "contact": {
     "title": "Get in touch",
@@ -86,7 +88,7 @@
     "sending": "Sending…",
     "ok": "Request received. We'll reply within two working days.",
     "err": "That didn't send. Check your connection and try again.",
-    "errNoKey": "The form isn't connected to email yet. Please use WhatsApp or call us instead.",
+    "errNoKey": "The form isn't connected to email yet. Please email us directly instead.",
     "startOver": "Start over",
     "wa": "Continue on WhatsApp",
     "waHi": "Hello, I would like to talk about: ",
