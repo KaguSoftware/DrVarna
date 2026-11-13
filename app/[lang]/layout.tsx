@@ -38,6 +38,7 @@ export async function generateMetadata({ params }: LayoutProps<"/[lang]">): Prom
   if (!hasLocale(lang)) return {};
   const dict = await getDictionary(lang);
   return {
+    metadataBase: new URL("https://varnadaru.com"),
     title: dict.meta.title,
     description: dict.meta.description,
     icons: { icon: "/favicon.ico" },
